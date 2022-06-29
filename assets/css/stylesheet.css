@@ -111,8 +111,10 @@ html{
 
 
 /*posts de projetos*/
-
-
+.projetos img {
+    width: 75%;
+    height: 33rem;
+}
 
 
 
@@ -128,6 +130,10 @@ html{
     div.social {
         display: flex;
         justify-content: center;
+    }
+    .projetos img {
+        width: 100%;
+        height: 33rem;
     }
   }
   
