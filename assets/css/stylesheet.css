@@ -1,0 +1,144 @@
+:root{
+ --aqua: #00fff2;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*classes tipografia e cores de fonte*/
+.playfair4{
+    font-family: 'Playfair Display', serif;
+}
+
+.playfair4it{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.playfair6{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.playfair6it{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.playfair8it{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.staatliches4{
+    font-family: 'Staatliches', cursive;
+}
+
+.fonte-aqua{
+    color: var(--aqua);
+}
+
+.fonte-preta{
+    color: black;
+}
+
+.fonte-branca{
+    color: whitesmoke;
+}
+
+
+
+/*classes paleta de cores*/
+
+
+
+/*efeitos*/
+
+
+/*menu esquerda*/
+.sidebar {
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.sidebar .profile {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar .profile img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.sidebar .profile h3{
+    margin: 10px 0 5px;
+}
+
+.sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+
+.sidebar .social img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+/*posts de projetos*/
+
+
+
+
+
+
+/* responsividade em telas <700px */
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: center;}
+    div.social {
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+  /* responsividade em telas <400px*/
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+    div.social {
+        display: flex;
+        justify-content: center;
+    }
+
+  }
