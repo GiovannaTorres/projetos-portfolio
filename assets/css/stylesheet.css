@@ -1,6 +1,6 @@
 :root{
- --vermelho: #a10000;
- --bege: #dfdbd2;
+ --vermelho: #bb0000;
+ --bege: #dadada;
 }
 
 html{
@@ -16,7 +16,7 @@ html{
 }
 
 body{
-    background-image: url("../../assets/img/beigestraightgrid-extended.jpg");
+    background-image: url("../../assets/img/beigestraightgrid-extended3.jpg");
     background-color: var(--bege);
     background-attachment: fixed;
     background-repeat: no-repeat;;
@@ -45,15 +45,27 @@ body{
     font-style: italic;
 }
 
+.playfair8{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
 .playfair8it{
     font-family: 'Playfair Display', serif;
     font-weight: 800;
     font-style: italic;
 }
 
-.staatliches4{
-    font-family: 'Staatliches', cursive;
+.kanit2{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
 }
+
+.anton4{
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+}
+
 
 .fonte-red{
     color: var(--vermelho);
@@ -71,6 +83,10 @@ body{
     color: whitesmoke;
 }
 
+.fonte-g{
+    font-size: 8vh;
+}
+
 
 
 /*classes paleta de cores*/
@@ -83,15 +99,25 @@ body{
 /*apresentacao*/
 
 #profile {
-    /*position: fixed;*/
     padding: 0;
     height: 100vh;
     transition: all 0.5s ease;
     border: dashed blue;
 }
 
+.spoiler {
+    position:absolute;
+    background-color: #bb0000;
+    width: 40vh;
+    height: 40vh;
+    top: 35px;
+    right: 15vh;
+    border-radius: 50%;
+
+}
+
 .descricao {
-    margin-top: 50vh;
+    margin-top: 40vh;
 }
 
 .descricao img {
@@ -103,8 +129,7 @@ body{
 }
 
 .nome {
-    position: absolute;
-    margin-left: 45vh;
+    position: relative;
 }
 
 .social {
@@ -125,13 +150,33 @@ body{
 
 
 
+
 /* responsividade em telas <700px */
 @media screen and (max-width: 700px) {
-  
+
+    .spoiler {
+        display: none;
+    }
+
+    .descricao {
+        margin-top: 20vh;
+    }
+
   }
   
   /* responsividade em telas <400px*/
   @media screen and (max-width: 400px) {
- 
+
+    .descricao {
+        margin-top: 10vh;
+    }
 
   }
+
+  /*botao alternar cores*/
+.cores {
+    position: absolute;
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 10px;;
+}

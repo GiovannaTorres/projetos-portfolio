@@ -10,7 +10,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600;1,800&family=Staatliches&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,800&display=swap" rel="stylesheet">
     
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -22,23 +22,32 @@
 
     <body>
 
+        <!--botao alternar cores-->
+        <div class="cores">
+            <button>trocar cores</button>
+        </div>
+
         <!--apresentação-->
         <section id="profile">
 
-                <div class="descricao row">
+                <div class="descricao row ms-3">
                     <div class="col-sm-6 d-flex justify-content-center"><img src="./assets/img/profile.png" alt="Foto perfil"></div>
                     <div class="col-sm-6">
-                        <h2 class="fonte-preta">designer</h2>
-                        <p class="fonte-preta">UX Design, Dev Fullstack, Design Gráfico, Artes Visuais</p>
+                        <h2 class="fonte-preta playfair6it">designer</h2>
+                        <h5 class="fonte-preta playfair4">UX Design, Dev Fullstack, <br>Design Gráfico, Artes Visuais</h5>
                     </div>
                 </div>
-                    
-                <div class="nome">
-                    <h1 class="fonte-red">Giovanna C. Torres</h1>
+
+                <div class="nome row ms-3 mt-1">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-5">
+                        <h1 class="anton4 fonte-red fonte-g">GIOVANNA TORRES</h1>
+                    </div>
                 </div>
 
 
-            <div class="social row">
+            <div class="social mt-3 row">
+
                 <a href="https://www.linkedin.com/in/giovannactorres/" target="_blank" class="me-3" >
                     <img src="./assets/img/icon-linkedin.png" alt="LinkedIn">
                 </a>
@@ -50,6 +59,10 @@
                 <a href="https://www.instagram.com/" target="_blank" class="me-3" >
                     <img src="./assets/img/icon-behance.png" alt="Behance">
                 </a>
+            </div>
+
+            <div class="spoiler me-5">
+                    
             </div>
 
         </section>
