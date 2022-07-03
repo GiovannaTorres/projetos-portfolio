@@ -84,7 +84,7 @@ body{
 }
 
 .fonte-g{
-    font-size: 8vh;
+    font-size: 10vh;
 }
 
 
@@ -102,22 +102,24 @@ body{
     padding: 0;
     height: 100vh;
     transition: all 0.5s ease;
-    border: dashed blue;
+    border: 1px solid rgba(255, 255, 255, 0);
+    z-index: 9999;
 }
 
-.spoiler {
+.spoiler img{
     position:absolute;
-    background-color: #bb0000;
-    width: 40vh;
-    height: 40vh;
-    top: 35px;
-    right: 15vh;
-    border-radius: 50%;
+    width: 100vh;
+    height: 100vh;
+    top: 0vh;
+    left: 0vh;
+    border-radius: 0%;
+    z-index: -1;
+    filter: grayscale(.75);
 
 }
 
 .descricao {
-    margin-top: 40vh;
+    margin-top: 50vh;
 }
 
 .descricao img {
@@ -161,8 +163,8 @@ body{
 
 
 
-/* responsividade em telas <700px */
-@media screen and (max-width: 700px) {
+/* responsividade em telas <1200px */
+@media screen and (max-width: 1200px) {
 
     .spoiler {
         display: none;
@@ -172,17 +174,21 @@ body{
         margin-top: 20vh;
     }
 
+
     .projetos{
         width:70vh;
     }
-
   }
   
-  /* responsividade em telas <400px*/
-  @media screen and (max-width: 400px) {
+  /* responsividade em telas <600px*/
+  @media screen and (max-width: 600px) {
 
     .descricao {
         margin-top: 10vh;
+    }
+
+    .descricao img {
+        margin: auto;
     }
 
   }
@@ -191,6 +197,6 @@ body{
 .cores {
     position: absolute;
     position: fixed;
-    margin-top: 10px;
-    margin-left: 10px;;
+    bottom: 10px;
+    right: 10px;;
 }
