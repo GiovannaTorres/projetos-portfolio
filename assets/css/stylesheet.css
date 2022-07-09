@@ -199,12 +199,12 @@ body{
 #retangulo2 {
     position: absolute;
     top:0vh;
-    left:100vh;
+    left:102vh;
     z-index: 1;
 }
 
 #retangulo2 img{
-    width: 10vh;
+    width: 8vh;
     height: 100vh;
     border-radius: 0%;
 }
