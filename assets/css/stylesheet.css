@@ -84,11 +84,11 @@ body{
 }
 
 .fonte-g{
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .fonte-m{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .fonte-p{
@@ -110,7 +110,7 @@ body{
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
+    transition: .3s ease;
     background-color: rgba(2, 2, 34, 0.911);
     border-radius: 0%;
     display: block;
@@ -147,7 +147,7 @@ body{
     left: 0vh;
     border-radius: 0%;
     z-index: -1;
-    filter: grayscale(.75);
+    filter: grayscale(.5);
 
 }
 
@@ -196,11 +196,24 @@ body{
     border-radius: 0%;
 }
 
+#retangulo2 {
+    position: absolute;
+    top:0vh;
+    left:100vh;
+    z-index: 1;
+}
+
+#retangulo2 img{
+    width: 10vh;
+    height: 100vh;
+    border-radius: 0%;
+}
+
 
 /*posts de projetos*/
 
 .projetos{
-    width:90vh;
+    width:100vh;
     margin-left: 10vh;
     padding: 0;
 }
@@ -257,6 +270,10 @@ body{
 
     .projetos{
         width:60vh;
+    }
+
+    #retangulo2{
+        display: none;
     }
 
   }
