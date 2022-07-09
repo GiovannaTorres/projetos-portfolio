@@ -1,6 +1,6 @@
 :root{
- --vermelho: #bb0000;
- --bege: #dadada;
+ --azulzinho: #EFFBFF;
+ --verde-neon: #e2ffdd;
 }
 
 html{
@@ -16,15 +16,17 @@ html{
 }
 
 body{
-    background-image: url("../../assets/img/beigestraightgrid-extended3.jpg");
-    background-color: var(--bege);
+    background-image: url("../../assets/img/blackstraightgrid-extended-darker-b.jpg");
+    background-color: var(--azulzinho);
     background-attachment: fixed;
     background-repeat: no-repeat;;
     display: block;
     background-size: cover;
 }
 
+
 /*classes tipografia e cores de fonte*/
+
 .playfair4{
     font-family: 'Playfair Display', serif;
 }
@@ -56,14 +58,8 @@ body{
     font-style: italic;
 }
 
-.kanit2{
-    font-family: 'Kanit', sans-serif;
-    font-weight: 200;
-}
-
-.anton4{
-    font-family: 'Anton', sans-serif;
-    font-weight: 400;
+.bebasneue{
+    font-family: 'Bebas Neue', cursive;
 }
 
 
@@ -71,8 +67,12 @@ body{
     color: var(--vermelho);
 }
 
-.fonte-bege{
-    color: var(--bege)
+.fonte-azulzinha{
+    color: var(--azulzinho);
+}
+
+.fonte-verde{
+    color: var(--verde-neon);
 }
 
 .fonte-preta{
@@ -84,16 +84,48 @@ body{
 }
 
 .fonte-g{
-    font-size: 10vh;
+    font-size: 70px;
 }
 
+.fonte-m{
+    font-size: 24px;
+}
 
-
-/*classes paleta de cores*/
-
-
+.fonte-p{
+    font-size: 12px;
+}
 
 /*efeitos*/
+.projeto-hover{
+    position: relative;
+  }
+  
+.overlay {
+    position: absolute;
+    object-fit: contain;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(2, 2, 34, 0.911);
+    border-radius: 0%;
+    display: block;
+  }
+  
+.projeto-hover:hover .overlay {
+    opacity: 0.9;
+    filter: grayscale(.75);
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
 
 
 /*apresentacao*/
@@ -108,6 +140,7 @@ body{
 
 .spoiler img{
     position:absolute;
+    padding: 0;
     width: 100vh;
     height: 100vh;
     top: 0vh;
@@ -119,37 +152,56 @@ body{
 }
 
 .descricao {
-    margin-top: 50vh;
+    position: fixed;
+    top: 40vh;
+    right: 12vh;
 }
 
 .descricao img {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
 
 .nome {
-    position: relative;
+    position: fixed;
+    top: 60vh;
+    right: 12vh;
 }
 
 .social {
-    margin-left: 60%;
+    position: fixed;
+    top: 75vh;
+    right: 12vh;
 }
 
-.social a, img{
+.social a,img{
     display: block;
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
+#retangulo {
+    position: fixed;
+    top:20vh;
+    right:8vh;
+    z-index: -2;
+}
+
+#retangulo img{
+    width: 100px;
+    height: 700px;
+    border-radius: 0%;
+}
+
 
 /*posts de projetos*/
 
 .projetos{
-    width:150vh;
-    margin: auto;
+    width:90vh;
+    margin-left: 10vh;
     padding: 0;
 }
 .projetos img{
@@ -164,6 +216,7 @@ body{
 
 
 /* responsividade em telas <1200px */
+
 @media screen and (max-width: 1200px) {
 
     .spoiler {
@@ -171,32 +224,40 @@ body{
     }
 
     .descricao {
-        margin-top: 20vh;
+        position: static;
+        margin-top: 15vh;
+        margin-left: 5vh;
+    }
+    .nome {
+        position: static;
+        margin-top: 10vh;
+        margin-left: 5vh;
+    }
+
+    .social {
+        position: static;
+        margin-top: 5vh;
+        margin-left: 5vh;
     }
 
 
     .projetos{
-        width:70vh;
+        width:100vh;
+        margin: auto;
     }
   }
   
   /* responsividade em telas <600px*/
-  @media screen and (max-width: 600px) {
 
-    .descricao {
-        margin-top: 10vh;
-    }
+  @media screen and (max-width: 600px) {
 
     .descricao img {
         margin: auto;
     }
 
+    .projetos{
+        width:60vh;
+    }
+
   }
 
-  /*botao alternar cores*/
-.cores {
-    position: absolute;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;;
-}
