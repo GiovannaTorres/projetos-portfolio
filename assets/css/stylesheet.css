@@ -1,6 +1,6 @@
 :root{
- --azulzinho: #EFFBFF;
- --verde-neon: #e2ffdd;
+ --azulzinho: #d1f3ff;
+ --verde-neon: #a7ff98;
 }
 
 html{
@@ -144,7 +144,7 @@ body{
     width: 100vh;
     height: 100vh;
     top: 0vh;
-    left: 0vh;
+    right: 10vh;
     border-radius: 0%;
     z-index: -1;
     filter: grayscale(.5);
@@ -154,7 +154,7 @@ body{
 .descricao {
     position: fixed;
     top: 40vh;
-    right: 12vh;
+    left: 12vh;
 }
 
 .descricao img {
@@ -166,14 +166,14 @@ body{
 
 .nome {
     position: fixed;
-    top: 60vh;
-    right: 12vh;
+    top: 55vh;
+    left: 12vh;
 }
 
 .social {
     position: fixed;
     top: 75vh;
-    right: 12vh;
+    left: 12vh;
 }
 
 .social a,img{
@@ -186,7 +186,7 @@ body{
 #retangulo {
     position: fixed;
     top:20vh;
-    right:8vh;
+    left:8vh;
     z-index: -2;
 }
 
@@ -196,26 +196,16 @@ body{
     border-radius: 0%;
 }
 
-#retangulo2 {
-    position: absolute;
-    top:0vh;
-    left:102vh;
-    z-index: 1;
-}
 
-#retangulo2 img{
-    width: 8vh;
-    height: 100vh;
-    border-radius: 0%;
-}
 
 
 /*posts de projetos*/
 
 .projetos{
     width:100vh;
-    margin-left: 10vh;
     padding: 0;
+    float: right;
+    margin-right: 10vh;
 }
 .projetos img{
     border-radius: 0%;
