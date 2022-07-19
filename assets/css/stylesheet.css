@@ -1,6 +1,9 @@
 :root{
- --azulzinho: #d1f3ff;
- --verde-neon: #a7ff98;
+ --azul: #aeeaff;
+ --verde: #a7ff98;
+ --rosa: #ff95ff;
+ --vermelhinho: #ff8ca1;
+
 }
 
 html{
@@ -17,7 +20,7 @@ html{
 
 body{
     background-image: url("../../assets/img/blackstraightgrid-extended-darker-b.jpg");
-    background-color: var(--azulzinho);
+    background-color: var(--azul);
     background-attachment: fixed;
     background-repeat: no-repeat;;
     display: block;
@@ -63,16 +66,20 @@ body{
 }
 
 
-.fonte-red{
-    color: var(--vermelho);
-}
-
-.fonte-azulzinha{
-    color: var(--azulzinho);
+.fonte-azul{
+    color: var(--azul);
 }
 
 .fonte-verde{
-    color: var(--verde-neon);
+    color: var(--verde);
+}
+
+.fonte-rosa{
+    color: var(--rosa);
+}
+
+.fonte-vermelha{
+    color: var(--vermelhinho);
 }
 
 .fonte-preta{
@@ -87,6 +94,10 @@ body{
     font-size: 60px;
 }
 
+.fonte-gg{
+    font-size: 100px;
+}
+
 .fonte-m{
     font-size: 20px;
 }
@@ -95,7 +106,9 @@ body{
     font-size: 12px;
 }
 
-/*efeitos*/
+
+
+/*efeitos projetos*/
 .projeto-hover{
     position: relative;
   }
@@ -118,8 +131,28 @@ body{
   
 .projeto-hover:hover .overlay {
     opacity: 0.9;
-    filter: grayscale(.75);
+    filter:grayscale(75%);
   }
+
+.green-shadow:hover {
+    -webkit-box-shadow: 0px 0px 14px -5px #55FF67; 
+    box-shadow: 0px 0px 14px -5px #55FF67;
+}
+
+.pink-shadow:hover {
+    -webkit-box-shadow: 0px 0px 14px -5px #DE6BFF; 
+    box-shadow: 0px 0px 14px -5px #DE6BFF;
+}
+
+.blue-shadow:hover {
+    -webkit-box-shadow: 0px 0px 14px -5px #5FFFFB; 
+    box-shadow: 0px 0px 14px -5px #5FFFFB;
+}
+
+.red-shadow:hover {
+    -webkit-box-shadow: 0px 0px 14px -5px #FF7373; 
+    box-shadow: 0px 0px 14px -5px #FF7373;
+}
   
   a{
     text-decoration: none;
@@ -147,13 +180,19 @@ body{
     right: 10vh;
     border-radius: 0%;
     z-index: -1;
-    filter: grayscale(.5);
+    filter: grayscale(.1);
 
+}
+
+.portfolio {
+    position: fixed;
+    top: 12vh;
+    left: 12vh;
 }
 
 .descricao {
     position: fixed;
-    top: 40vh;
+    top: 50vh;
     left: 12vh;
 }
 
@@ -166,7 +205,7 @@ body{
 
 .nome {
     position: fixed;
-    top: 55vh;
+    top: 62vh;
     left: 12vh;
 }
 
@@ -182,20 +221,6 @@ body{
     height: 50px;
     border-radius: 50%;
 }
-
-#retangulo {
-    position: fixed;
-    top:20vh;
-    left:8vh;
-    z-index: -2;
-}
-
-#retangulo img{
-    width: 100px;
-    height: 700px;
-    border-radius: 0%;
-}
-
 
 
 
@@ -237,6 +262,12 @@ body{
         margin-left: 5vh;
     }
 
+    .portfolio {
+        position: static;
+        margin-top: 8vh;
+        margin-left: 5vh;
+    }
+
     .social {
         position: static;
         margin-top: 5vh;
@@ -258,11 +289,12 @@ body{
         margin: auto;
     }
 
+
     .projetos{
         width:60vh;
     }
 
-    #retangulo2{
+    .pontinhos{
         display: none;
     }
 
