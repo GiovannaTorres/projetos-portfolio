@@ -1,8 +1,8 @@
 :root{
- --azul: #aeeaff;
- --verde: #a7ff98;
- --rosa: #ff95ff;
- --vermelhinho: #ff8ca1;
+ --azul: #cbeeffd8;
+ --verde: #bdffb1;
+ --rosa: #ffc3ff;
+ --vermelhinho: #ffacbb;
 
 }
 
@@ -20,7 +20,7 @@ html{
 
 body{
     background-image: url("../../assets/img/blackstraightgrid-extended-darker-b.jpg");
-    background-color: var(--azul);
+    background-color: black;
     background-attachment: fixed;
     background-repeat: no-repeat;;
     display: block;
@@ -91,15 +91,15 @@ body{
 }
 
 .fonte-g{
-    font-size: 60px;
+    font-size: 47px;
 }
 
 .fonte-gg{
-    font-size: 100px;
+    font-size: 125px;
 }
 
 .fonte-m{
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .fonte-p{
@@ -134,25 +134,21 @@ body{
     filter:grayscale(75%);
   }
 
-.green-shadow:hover {
-    -webkit-box-shadow: 0px 0px 14px -5px #55FF67; 
-    box-shadow: 0px 0px 14px -5px #55FF67;
+.text-shadows {
+    color: transparent;
+    text-shadow: -4px 4px rgba(136, 159, 177, 0.4), -3px 3px rgba(92, 118, 156, 0.2), -2px 2px rgba(101, 141, 179, 0.2), -1px 1px rgba(108, 158, 175, 0.2), 0px 0px rgba(64, 105, 135, 0.5), 1px -1px rgba(51, 74, 87, 0.6), 2px -2px rgba(47, 67, 79, 0.7), 3px -3px rgba(48, 70, 86, 0.8), 4px -4px rgba(48, 67, 80, 0.9), 5px -5px rgb(43, 63, 78);
 }
 
-.pink-shadow:hover {
-    -webkit-box-shadow: 0px 0px 14px -5px #DE6BFF; 
-    box-shadow: 0px 0px 14px -5px #DE6BFF;
+.text-shadow {
+    text-shadow: 4px -4px 2px rgba(140,186,221,0.21);
 }
 
-.blue-shadow:hover {
-    -webkit-box-shadow: 0px 0px 14px -5px #5FFFFB; 
-    box-shadow: 0px 0px 14px -5px #5FFFFB;
+.box-shadows:hover {
+    transition: .3s ease;
+    -webkit-box-shadow: -4px 4px 1px 0px rgba(139,185,219,0.65), 4px -4px 1px 0px rgba(139,185,219,0.5), 4px 4px 1px 2px rgba(139,185,219,0.37), -4px -4px 1px 2px rgba(139,185,219,0.34); 
+    box-shadow: -4px 4px 1px 0px rgba(139,185,219,0.65), 4px -4px 1px 0px rgba(139,185,219,0.5), 4px 4px 1px 2px rgba(139,185,219,0.37), -4px -4px 1px 2px rgba(139,185,219,0.34);
 }
 
-.red-shadow:hover {
-    -webkit-box-shadow: 0px 0px 14px -5px #FF7373; 
-    box-shadow: 0px 0px 14px -5px #FF7373;
-}
   
   a{
     text-decoration: none;
@@ -184,9 +180,15 @@ body{
 
 }
 
-.portfolio {
+.portfolio1 {
     position: fixed;
     top: 12vh;
+    left: 12vh;
+}
+
+.portfolio2 {
+    position: fixed;
+    top: 23vh;
     left: 12vh;
 }
 
@@ -262,10 +264,8 @@ body{
         margin-left: 5vh;
     }
 
-    .portfolio {
-        position: static;
-        margin-top: 8vh;
-        margin-left: 5vh;
+    .portfolio1 , .portfolio2{
+        display: none;
     }
 
     .social {
@@ -294,9 +294,6 @@ body{
         width:60vh;
     }
 
-    .pontinhos{
-        display: none;
-    }
 
   }
 
