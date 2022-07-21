@@ -188,7 +188,7 @@ body{
 
 .portfolio2 {
     position: fixed;
-    top: 23vh;
+    top: 24vh;
     left: 12vh;
 }
 
@@ -249,29 +249,36 @@ body{
 
 @media screen and (max-width: 1200px) {
 
-    .spoiler {
+    #profile {
+        height: 70vh;
+    }
+
+    .spoiler, .descricao {
         display: none;
     }
 
-    .descricao {
-        position: static;
-        margin-top: 15vh;
-        margin-left: 5vh;
-    }
     .nome {
         position: static;
         margin-top: 10vh;
+        margin-left: 18vh;
+    }
+
+    .portfolio1 {
+        position: absolute;
+        margin-top: 18vh;
         margin-left: 5vh;
     }
 
-    .portfolio1 , .portfolio2{
-        display: none;
+    .portfolio2 {
+        position: absolute;
+        margin-top: 20vh;
+        margin-left: 5vh;
     }
 
     .social {
         position: static;
         margin-top: 5vh;
-        margin-left: 5vh;
+        margin-left: 18vh;
     }
 
 
