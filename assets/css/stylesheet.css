@@ -1,5 +1,5 @@
 :root{
- --azul: #cbeeffd8;
+ --azul: #a7cee2d8;
  --verde: #bdffb1;
  --rosa: #ffc3ff;
  --vermelhinho: #ffacbb;
@@ -136,17 +136,17 @@ body{
 
 .text-shadows {
     color: transparent;
-    text-shadow: -4px 4px rgba(136, 159, 177, 0.4), -3px 3px rgba(92, 118, 156, 0.2), -2px 2px rgba(101, 141, 179, 0.2), -1px 1px rgba(108, 158, 175, 0.2), 0px 0px rgba(64, 105, 135, 0.5), 1px -1px rgba(51, 74, 87, 0.6), 2px -2px rgba(47, 67, 79, 0.7), 3px -3px rgba(48, 70, 86, 0.8), 4px -4px rgba(48, 67, 80, 0.9), 5px -5px rgb(43, 63, 78);
+    text-shadow: -4px 4px rgba(175, 196, 212, 0.522), -3px 3px rgba(92, 118, 156, 0.2), -2px 2px rgba(101, 141, 179, 0.2), -1px 1px rgba(108, 158, 175, 0.2), 0px 0px rgba(64, 105, 135, 0.5), 1px -1px rgba(51, 74, 87, 0.6), 2px -2px rgba(47, 67, 79, 0.7), 3px -3px rgba(48, 70, 86, 0.8), 4px -4px rgba(48, 67, 80, 0.9), 5px -5px rgb(43, 63, 78);
 }
 
 .text-shadow {
-    text-shadow: 4px -4px 2px rgba(140,186,221,0.21);
+    text-shadow: 1px -1px 1px rgba(140, 186, 221, 0.53);
 }
 
 .box-shadows:hover {
     transition: .3s ease;
-    -webkit-box-shadow: -4px 4px 1px 0px rgba(139,185,219,0.65), 4px -4px 1px 0px rgba(139,185,219,0.5), 4px 4px 1px 2px rgba(139,185,219,0.37), -4px -4px 1px 2px rgba(139,185,219,0.34); 
-    box-shadow: -4px 4px 1px 0px rgba(139,185,219,0.65), 4px -4px 1px 0px rgba(139,185,219,0.5), 4px 4px 1px 2px rgba(139,185,219,0.37), -4px -4px 1px 2px rgba(139,185,219,0.34);
+    -webkit-box-shadow: 12px 12px 3px 2px rgba(101,124,160,0.75), 6px 6px 3px 2px rgba(129,158,204,0.75), -6px -6px 3px 2px rgba(129,158,204,0.75), -12px -12px 3px 2px rgba(101,124,160,0.75); 
+    box-shadow: 12px 12px 3px 2px rgba(101,124,160,0.75), 6px 6px 3px 2px rgba(129,158,204,0.75), -6px -6px 3px 2px rgba(129,158,204,0.75), -12px -12px 3px 2px rgba(101,124,160,0.75);
 }
 
   
