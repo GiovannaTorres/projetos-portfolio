@@ -1,8 +1,7 @@
 :root{
- --azul: #a7cee2d8;
- --verde: #bdffb1;
- --rosa: #ffc3ff;
- --vermelhinho: #ffacbb;
+
+ --vermelhinho: #c23400;
+ --azulado: rgb(234, 250, 255);
 
 }
 
@@ -19,7 +18,7 @@ html{
 }
 
 body{
-    background-image: url("../../assets/img/blackstraightgrid-extended-darker-b.jpg");
+    background-image: url("../../assets/img/beigestraightgrid-extended4.jpg");
     background-color: black;
     background-attachment: fixed;
     background-repeat: no-repeat;;
@@ -66,18 +65,6 @@ body{
 }
 
 
-.fonte-azul{
-    color: var(--azul);
-}
-
-.fonte-verde{
-    color: var(--verde);
-}
-
-.fonte-rosa{
-    color: var(--rosa);
-}
-
 .fonte-vermelha{
     color: var(--vermelhinho);
 }
@@ -87,7 +74,7 @@ body{
 }
 
 .fonte-branca{
-    color: whitesmoke;
+    color: var(--azulado);
 }
 
 .fonte-g{
@@ -106,7 +93,10 @@ body{
     font-size: 12px;
 }
 
-
+/*efeitos texto*/
+.text-shadows{
+    text-shadow: 2px 2px 0px #251B16;
+}
 
 /*efeitos projetos*/
 .projeto-hover{
@@ -124,35 +114,27 @@ body{
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-    background-color: rgba(2, 2, 34, 0.911);
+    background-color: var(--azulado);
     border-radius: 0%;
     display: block;
   }
   
 .projeto-hover:hover .overlay {
     opacity: 0.9;
-    filter:grayscale(75%);
   }
 
-.text-shadows {
-    color: transparent;
-    text-shadow: -4px 4px rgba(175, 196, 212, 0.522), -3px 3px rgba(92, 118, 156, 0.2), -2px 2px rgba(101, 141, 179, 0.2), -1px 1px rgba(108, 158, 175, 0.2), 0px 0px rgba(64, 105, 135, 0.5), 1px -1px rgba(51, 74, 87, 0.6), 2px -2px rgba(47, 67, 79, 0.7), 3px -3px rgba(48, 70, 86, 0.8), 4px -4px rgba(48, 67, 80, 0.9), 5px -5px rgb(43, 63, 78);
-}
-
-.text-shadow {
-    text-shadow: 1px -1px 1px rgba(140, 186, 221, 0.53);
-}
-
-.box-shadows:hover {
+.box-shadows:hover{
+    -webkit-box-shadow: 14px 14px 0px -3px #110C0A; 
+    box-shadow: 14px 14px 0px -3px #110C0A;
     transition: .3s ease;
-    -webkit-box-shadow: 12px 12px 3px 2px rgba(101,124,160,0.75), 6px 6px 3px 2px rgba(129,158,204,0.75), -6px -6px 3px 2px rgba(129,158,204,0.75), -12px -12px 3px 2px rgba(101,124,160,0.75); 
-    box-shadow: 12px 12px 3px 2px rgba(101,124,160,0.75), 6px 6px 3px 2px rgba(129,158,204,0.75), -6px -6px 3px 2px rgba(129,158,204,0.75), -12px -12px 3px 2px rgba(101,124,160,0.75);
 }
+
+
 
   
   a{
     text-decoration: none;
-    color: white;
+    color: var(--azulado);
   }
 
 
@@ -167,18 +149,15 @@ body{
     z-index: 9999;
 }
 
-
-.portfolio1 {
+#portfolio-titulo{
     position: fixed;
-    top: 12vh;
-    left: 12vh;
+    top: 10vh;
+    left: 1vh;
+    border-radius: 0%;
+    height: 35vh;
+    width: auto;
 }
 
-.portfolio2 {
-    position: fixed;
-    top: 24vh;
-    left: 12vh;
-}
 
 .descricao {
     position: fixed;
@@ -237,49 +216,41 @@ body{
 
 @media screen and (max-width: 1200px) {
 
-    #profile {
-        height: 70vh;
-    }
-
 
     .nome {
         position: static;
-        margin-top: 10vh;
-        margin-left: 18vh;
+        margin-top: 5vh;
+        margin-left: 10vh;
     }
 
-    .portfolio1 {
-        position: absolute;
-        margin-top: 18vh;
-        margin-left: 5vh;
-    }
-
-    .portfolio2 {
-        position: absolute;
-        margin-top: 20vh;
-        margin-left: 5vh;
-    }
 
     .social {
         position: static;
-        margin-top: 5vh;
-        margin-left: 18vh;
+        margin-top: 3vh;
+        margin-left: 8vh;
     }
 
 
     .projetos{
+        position: absolute;
         width:100vh;
-        margin: auto;
+        left: 10vh;
     }
+
+    #portfolio-titulo{
+        position: static;
+        margin-top: 8vh;
+    }
+
+    .descricao {
+        display: none;
+    }
+
   }
   
   /* responsividade em telas <600px*/
 
   @media screen and (max-width: 600px) {
-
-    .descricao img {
-        margin: auto;
-    }
 
 
     .projetos{
