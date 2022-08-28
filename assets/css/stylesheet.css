@@ -1,6 +1,5 @@
 :root{
 
- --vermelhinho: #c23400;
  --azulado: rgb(234, 250, 255);
 
 }
@@ -18,8 +17,8 @@ html{
 }
 
 body{
-    background-image: url("../../assets/img/beigestraightgrid-extended4.jpg");
-    background-color: black;
+    background-image: url("../../assets/img/gradient2.jpg");
+    background-color: var(--azulado);
     background-attachment: fixed;
     background-repeat: no-repeat;;
     display: block;
@@ -29,45 +28,29 @@ body{
 
 /*classes tipografia e cores de fonte*/
 
-.playfair4{
-    font-family: 'Playfair Display', serif;
-}
-
-.playfair4it{
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-}
-
-.playfair6{
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-}
-
-.playfair6it{
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    font-style: italic;
-}
-
-.playfair8{
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-}
-
-.playfair8it{
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-    font-style: italic;
-}
-
 .bebasneue{
     font-family: 'Bebas Neue', cursive;
 }
 
-
-.fonte-vermelha{
-    color: var(--vermelhinho);
+.baskerville{
+    font-family: 'Libre Baskerville', serif;
 }
+
+.baskerville-it{
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+}
+
+.raleway{
+    font-family: 'Raleway', sans-serif;
+}
+
+.raleway-it{
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+
+
 
 .fonte-preta{
     color: black;
@@ -125,8 +108,8 @@ body{
 
 
 .box-shadows:hover{
-    -webkit-box-shadow: 14px 14px 0px -3px #110C0A; 
-    box-shadow: 14px 14px 0px -3px #110C0A;
+    -webkit-box-shadow: 12px 12px 50px -6px #FCFFFE; 
+    box-shadow: 12px 12px 50px -6px #FCFFFE;
     transition: .3s ease;
 }
 
@@ -153,9 +136,9 @@ body{
 #portfolio-titulo{
     position: fixed;
     top: 10vh;
-    left: 1vh;
+    left: 12vh;
     border-radius: 0%;
-    height: 35vh;
+    height: 28vh;
     width: auto;
 }
 
@@ -241,6 +224,7 @@ body{
     #portfolio-titulo{
         position: static;
         margin-top: 8vh;
+        margin-left:8vh;
     }
 
     .descricao {
